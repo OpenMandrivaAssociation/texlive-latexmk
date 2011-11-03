@@ -1,3 +1,9 @@
+# revision 24326
+# category Package
+# catalog-ctan /support/latexmk
+# catalog-date 2011-10-19 00:36:12 +0200
+# catalog-license gpl
+# catalog-version 4.27a
 Name:		texlive-latexmk
 Version:	4.27a
 Release:	1
@@ -70,6 +76,7 @@ the source files change.
 %doc %{_texmfdistdir}/doc/support/latexmk/latexmk.txt
 %doc %{_mandir}/man1/latexmk.1*
 %doc %{_texmfdir}/doc/man/man1/latexmk.man1.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -86,3 +93,5 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
