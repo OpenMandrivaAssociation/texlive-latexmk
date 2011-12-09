@@ -1,11 +1,11 @@
-# revision 24326
+# revision 24722
 # category Package
 # catalog-ctan /support/latexmk
-# catalog-date 2011-10-19 00:36:12 +0200
+# catalog-date 2011-12-01 23:10:15 +0100
 # catalog-license gpl
-# catalog-version 4.27a
+# catalog-version 4.28c
 Name:		texlive-latexmk
-Version:	4.27a
+Version:	4.28c
 Release:	1
 Summary:	Fully automated LaTeX document generation routine
 Group:		Publishing
@@ -18,8 +18,6 @@ BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 Provides:	texlive-latexmk.bin = %{EVRD}
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 Latexmk completely automates the process of generating a LaTeX
@@ -33,19 +31,19 @@ changed. Thus a previewer can have an updated display whenever
 the source files change.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
