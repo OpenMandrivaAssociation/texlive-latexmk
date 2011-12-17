@@ -1,11 +1,11 @@
-# revision 24722
+# revision 24819
 # category Package
 # catalog-ctan /support/latexmk
-# catalog-date 2011-12-01 23:10:15 +0100
+# catalog-date 2011-12-11 00:05:45 +0100
 # catalog-license gpl
-# catalog-version 4.28c
+# catalog-version 4.30a
 Name:		texlive-latexmk
-Version:	4.28c
+Version:	4.30a
 Release:	1
 Summary:	Fully automated LaTeX document generation routine
 Group:		Publishing
@@ -57,6 +57,7 @@ the source files change.
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/README
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/asymptote_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/glossary_latexmkrc
+%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/mpost_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/pdflatexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/sagetex_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/README1
