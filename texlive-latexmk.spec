@@ -1,18 +1,19 @@
-# revision 24819
+# revision 25851
 # category Package
 # catalog-ctan /support/latexmk
-# catalog-date 2011-12-11 00:05:45 +0100
+# catalog-date 2012-04-04 17:48:43 +0200
 # catalog-license gpl
-# catalog-version 4.30a
+# catalog-version 4.31
 Name:		texlive-latexmk
-Version:	4.30a
-Release:	2
+Version:	4.31
+Release:	1
 Summary:	Fully automated LaTeX document generation routine
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexmk
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexmk.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexmk.doc.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexmk.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -47,11 +48,13 @@ the source files change.
 %doc %{_texmfdistdir}/doc/support/latexmk/INSTALL
 %doc %{_texmfdistdir}/doc/support/latexmk/README
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/README
+%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/Sweave_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/asymptote_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/glossary_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/mpost_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/pdflatexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/sagetex_latexmkrc
+%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/xelatex_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/README1
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/dvipdfm_call
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/dvipdfm_call.bat
@@ -63,15 +66,16 @@ the source files change.
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/pst2pdf_for_latexmk
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/pst2pdf_for_latexmk_README.txt
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/startacroread
-%doc %{_texmfdistdir}/doc/support/latexmk/latexmk.bat
 %doc %{_texmfdistdir}/doc/support/latexmk/latexmk.pdf
 %doc %{_texmfdistdir}/doc/support/latexmk/latexmk.txt
 %doc %{_mandir}/man1/latexmk.1*
 %doc %{_texmfdir}/doc/man/man1/latexmk.man1.pdf
+#- source
+%doc %{_texmfdistdir}/source/support/latexmk/latexmk.bat
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%setup -c -a0 -a1 -a2
 
 %build
 
