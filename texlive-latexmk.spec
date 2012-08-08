@@ -1,4 +1,4 @@
-# revision 25851
+# revision 26313
 # category Package
 # catalog-ctan /support/latexmk
 # catalog-date 2012-04-04 17:48:43 +0200
