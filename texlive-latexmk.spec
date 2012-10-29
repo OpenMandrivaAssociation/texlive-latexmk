@@ -1,13 +1,13 @@
-# revision 26313
+# revision 27474
 # category Package
 # catalog-ctan /support/latexmk
-# catalog-date 2012-04-04 17:48:43 +0200
+# catalog-date 2012-08-20 08:32:37 +0200
 # catalog-license gpl
-# catalog-version 4.31
+# catalog-version 4.33c
 Name:		texlive-latexmk
-Version:	4.31
-Release:	2
-Summary:	Fully automated LaTeX document generation routine
+Version:	4.33c
+Release:	1
+Summary:	Fully automated LaTeX document generation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexmk
 License:	GPL
@@ -54,6 +54,7 @@ the source files change.
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/mpost_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/pdflatexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/sagetex_latexmkrc
+%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/sweave_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/xelatex_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/README1
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/dvipdfm_call
