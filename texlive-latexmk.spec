@@ -1,13 +1,13 @@
-# revision 27474
+# revision 25851
 # category Package
 # catalog-ctan /support/latexmk
-# catalog-date 2012-08-20 08:32:37 +0200
+# catalog-date 2012-04-04 17:48:43 +0200
 # catalog-license gpl
-# catalog-version 4.33c
+# catalog-version 4.31
 Name:		texlive-latexmk
-Version:	4.33c
+Version:	4.31
 Release:	1
-Summary:	Fully automated LaTeX document generation
+Summary:	Fully automated LaTeX document generation routine
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexmk
 License:	GPL
@@ -54,7 +54,6 @@ the source files change.
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/mpost_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/pdflatexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/sagetex_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/sweave_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/xelatex_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/README1
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/dvipdfm_call
@@ -89,3 +88,29 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+
+
+%changelog
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 4.31-1
++ Revision: 790645
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 4.30a-2
++ Revision: 753182
+- Rebuild to reduce used resources
+
+* Sat Dec 17 2011 Paulo Andrade <pcpa@mandriva.com.br> 4.30a-1
++ Revision: 743292
+- texlive-latexmk
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 4.28c-1
++ Revision: 739821
+- texlive-latexmk
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 4.27a-1
++ Revision: 718823
+- texlive-latexmk
+- texlive-latexmk
+- texlive-latexmk
+- texlive-latexmk
+
