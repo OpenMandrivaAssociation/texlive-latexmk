@@ -1,11 +1,11 @@
-# revision 31087
+# revision 32200
 # category Package
 # catalog-ctan /support/latexmk
-# catalog-date 2012-11-17 01:32:51 +0100
+# catalog-date 2013-11-21 18:12:51 +0100
 # catalog-license gpl
-# catalog-version 4.35
+# catalog-version 4.39
 Name:		texlive-latexmk
-Version:	4.35
+Version:	4.39
 Release:	1
 Summary:	Fully automated LaTeX document generation
 Group:		Publishing
@@ -53,6 +53,7 @@ the source files change.
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/Sweave_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/TeX4ht-latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/asymptote_latexmkrc
+%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/clean_pattern_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/exceltex_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/glossary_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/lualatex_latexmkrc
@@ -61,6 +62,7 @@ the source files change.
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/pythontex-latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/sagetex_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/sweave_latexmkrc
+%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/tex4ht-latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/xelatex_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/README1
 %doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/dvipdfm_call
