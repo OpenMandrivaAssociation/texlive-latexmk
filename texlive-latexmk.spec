@@ -1,12 +1,12 @@
-# revision 32200
+# revision 32312
 # category Package
 # catalog-ctan /support/latexmk
-# catalog-date 2013-11-21 18:12:51 +0100
+# catalog-date 2013-12-03 18:34:20 +0100
 # catalog-license gpl
 # catalog-version 4.39
 Name:		texlive-latexmk
 Version:	4.39
-Release:	5
+Release:	6
 Summary:	Fully automated LaTeX document generation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexmk
@@ -28,8 +28,8 @@ the appropriate sequence of commands to generate a .dvi, .ps,
 is the "preview continuous mode", where the script watches all
 of the source files (primary file and included TeX and graphics
 files), and reruns LaTeX, etc., whenever a source file has
-changed. Thus a previewer can have an updated display whenever
-the source files change.
+changed. Thus a previewer can offer a display of the document's
+latest state.
 
 %post
     %{_sbindir}/texlive.post
