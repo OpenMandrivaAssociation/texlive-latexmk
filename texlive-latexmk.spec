@@ -1,4 +1,4 @@
-# revision 32312
+# revision 33756
 # category Package
 # catalog-ctan /support/latexmk
 # catalog-date 2013-12-03 18:34:20 +0100
@@ -6,7 +6,7 @@
 # catalog-version 4.39
 Name:		texlive-latexmk
 Version:	4.39
-Release:	7
+Release:	8
 Summary:	Fully automated LaTeX document generation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexmk
@@ -50,8 +50,6 @@ latest state.
 %doc %{_texmfdistdir}/doc/support/latexmk/INSTALL
 %doc %{_texmfdistdir}/doc/support/latexmk/README
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/README
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/Sweave_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/TeX4ht-latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/asymptote_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/clean_pattern_latexmkrc
 %doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/exceltex_latexmkrc
