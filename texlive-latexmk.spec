@@ -6,7 +6,7 @@
 # catalog-version 4.39
 Name:		texlive-latexmk
 Version:	4.39
-Release:	9
+Release:	10
 Summary:	Fully automated LaTeX document generation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexmk
