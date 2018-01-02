@@ -1,12 +1,6 @@
-# revision 33756
-# category Package
-# catalog-ctan /support/latexmk
-# catalog-date 2013-12-03 18:34:20 +0100
-# catalog-license gpl
-# catalog-version 4.39
 Name:		texlive-latexmk
-Version:	4.39
-Release:	11
+Version:	4.54c
+Release:	1
 Summary:	Fully automated LaTeX document generation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexmk
@@ -42,43 +36,12 @@ latest state.
 #-----------------------------------------------------------------------
 %files
 %{_bindir}/latexmk
-%{_texmfdistdir}/scripts/latexmk/latexmk.pl
+%{_texmfdistdir}/scripts/latexmk
 %doc %{_mandir}/man1/latexmk.1*
 %doc %{_texmfdistdir}/doc/man/man1/latexmk.man1.pdf
-%doc %{_texmfdistdir}/doc/support/latexmk/CHANGES
-%doc %{_texmfdistdir}/doc/support/latexmk/COPYING
-%doc %{_texmfdistdir}/doc/support/latexmk/INSTALL
-%doc %{_texmfdistdir}/doc/support/latexmk/README
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/README
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/asymptote_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/clean_pattern_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/exceltex_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/glossary_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/lualatex_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/mpost_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/pdflatexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/pythontex-latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/sagetex_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/sweave_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/tex4ht-latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/example_rcfiles/xelatex_latexmkrc
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/README1
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/dvipdfm_call
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/dvipdfm_call.bat
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/dvipdfmx_call
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/dvipdfmx_call.bat
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/htlatexonly
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/kickxdvi
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/l1
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/l2
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/myhtlatex2
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/pst2pdf_for_latexmk
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/pst2pdf_for_latexmk_README.txt
-%doc %{_texmfdistdir}/doc/support/latexmk/extra-scripts/startacroread
-%doc %{_texmfdistdir}/doc/support/latexmk/latexmk.pdf
-%doc %{_texmfdistdir}/doc/support/latexmk/latexmk.txt
+%doc %{_texmfdistdir}/doc/support/latexmk
 #- source
-%doc %{_texmfdistdir}/source/support/latexmk/latexmk.bat
+%doc %{_texmfdistdir}/source/support/latexmk
 
 #-----------------------------------------------------------------------
 %prep
