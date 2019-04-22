@@ -1,6 +1,6 @@
 Name:		texlive-latexmk
-Version:	4.56
-Release:	2
+Version:	4.63b
+Release:	1
 Summary:	Fully automated LaTeX document generation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexmk
