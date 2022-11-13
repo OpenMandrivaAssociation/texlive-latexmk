@@ -1,13 +1,12 @@
 Name:		texlive-latexmk
-Version:	4.63b
+Version:	62767
 Release:	1
 Summary:	Fully automated LaTeX document generation
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexmk
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexmk.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexmk.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexmk.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexmk.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexmk.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,33 +25,31 @@ changed. Thus a previewer can offer a display of the document's
 latest state.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
 %{_bindir}/latexmk
 %{_texmfdistdir}/scripts/latexmk
-%doc %{_mandir}/man1/latexmk.1*
-%doc %{_texmfdistdir}/doc/man/man1/latexmk.man1.pdf
+%doc %{_mandir}/man1/*.1*
+%doc %{_texmfdistdir}/doc/man/man1/*
 %doc %{_texmfdistdir}/doc/support/latexmk
-#- source
-%doc %{_texmfdistdir}/source/support/latexmk
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
-    ln -sf %{_texmfdistdir}/scripts/latexmk/latexmk.pl latexmk
+ln -sf %{_texmfdistdir}/scripts/latexmk/latexmk.pl latexmk
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
