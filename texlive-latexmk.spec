@@ -1,5 +1,5 @@
 Name:		texlive-latexmk
-Version:	69373
+Version:	69657
 Release:	1
 Summary:	Fully automated LaTeX document generation
 Group:		Publishing
