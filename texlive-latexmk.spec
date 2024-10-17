@@ -3,7 +3,7 @@ Version:	70909
 Release:	1
 Summary:	Fully automated LaTeX document generation
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/support/latexmk
+URL:		https://www.ctan.org/tex-archive/support/latexmk
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexmk.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexmk.doc.r%{version}.tar.xz
