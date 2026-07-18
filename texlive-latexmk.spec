@@ -1,5 +1,6 @@
 %global tl_name latexmk
 %global tl_revision 78335
+%global tl_bin_links latexmk:%{_texmfdistdir}/scripts/latexmk/latexmk.pl
 
 Name:		texlive-%{tl_name}
 Epoch:		1
@@ -15,6 +16,8 @@ BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(latexmk.bin)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 Latexmk completely automates the process of generating a LaTeX document.
